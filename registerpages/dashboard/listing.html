@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <meta name="author" content="Ansonika">
+    <title>List your room</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+	<link href="assets/img/shanyraq.png" rel="icon">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/menu.css" rel="stylesheet">
+    <link href="assets/css/listyle.css" rel="stylesheet">
+	<link href="assets/css/vendors.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	
+	<!-- /menu -->
+	
+	<div class="container-fluid full-height">
+		<div class="row row-height">
+			<div class="col-lg-6 content-left">
+				<div class="content-left-wrapper">
+					<a href="profile.html" id="logo"><img src="assets/img/shanyraq.png" alt="" width="49" ></a>
+					<div id="social">
+						<ul>							
+							<li><a href="https://www.instagram.com/panatab.kz/"><i class="icon-instagram"></i></a></li>
+						</ul>
+					</div>
+					<!-- /social -->
+					<div>
+						<figure><img src="assets/img/kiiz_ui.png" alt="" class="img-fluid" width="400"></figure>
+						<h2>Опубликуйте свою комнату</h2>
+						<p>Зарегистрируйте свою комнату бесплатно и расскажите нам о своем идеальном соседе по комнате за несколько простых шагов.</p>
+						
+						<a href="#start" class="btn_1 rounded mobile_btn">Start Now!</a>
+					</div>
+					<div class="copy">© 2021 PanaTAB</div>
+				</div>
+				<!-- /content-left-wrapper -->
+			</div>
+			<!-- /content-left -->
+
+			<div class="col-lg-6 content-right" id="start">
+				<div id="wizard_container">
+					<div id="top-wizard">
+							<div id="progressbar"></div>
+						</div>
+						<!-- /top-wizard -->
+						<form id="wrapped" method="POST">
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard">
+
+
+								<div class="step">
+									
+									<h3 class="main_question"><strong>1/5</strong>Пожалуйста, заполните информацию о комнате</h3>
+									<div class="form-group">
+										<input type="text" name="firstname" class="form-control required" placeholder="Название">
+									</div>									
+									<div class="form-group">
+										<input type="text" name="lastname" class="form-control required" placeholder="Адрес">
+									</div>
+									<div class="form-group">
+										<input type="text" name="City" class="form-control required" placeholder="Город">
+									</div>
+									<div class="form-group">
+										<div class="styled-select clearfix">
+											<select class="wide required" name="country">
+												<option value="">Room Type</option>
+												<option value="Europe">Entire Place</option>
+												<option value="Asia">Private Room</option>
+												<option value="North America">Shared Room</option>												                        
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-3">
+											<div class="form-group">
+												<input type="text" name="age" class="form-control" placeholder="Прайс">
+											</div>
+										</div>
+										<div class="col-9">
+											<div class="form-group radio_input">
+												<label class="container_radio">Мужской
+													<input type="radio" name="gender" value="Male" class="required">
+													<span class="checkmark"></span>
+												</label>
+												<label class="container_radio">Женский
+													<input type="radio" name="gender" value="Female" class="required">
+													<span class="checkmark"></span>
+												</label>												
+											</div>
+										</div>
+									</div>
+									<div class="form-group">										
+										<input type="file" 
+											class="required"
+											name="filepond"
+											multiple
+											data-max-file-size="3MB"
+											data-max-files="3" />
+
+									</div>
+									<!-- /row -->
+									<div class="form-group terms">
+										<label class="container_check">При публикации Вы соглашаетесь с <a href="#" data-toggle="modal" data-target="#terms-txt">правилами и условиями портала</a>
+											<input type="checkbox" name="terms" value="Yes" class="required">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+
+
+
+								<!-- /step-->
+								<div class="step">
+									<h3 class="main_question"><strong>2/5</strong>Перечислите свои удобства</h3>
+									<div class="form-group">
+										<label class="container_radio version_2">Имеется Wi-Fi
+											<input type="checkbox" name="question_1" value="Not Satisfied" class="required" onchange="getVals(this, 'question_1');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2">Меблированный
+											<input type="checkbox" name="question_1" value="Quite Satisfied" class="required" onchange="getVals(this, 'question_1');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2">Имеется стиральная машина
+											<input type="checkbox" name="question_1" value="Satisfied" class="required" onchange="getVals(this, 'question_1');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2">Имеется лифт
+											<input type="checkbox" name="question_1" value="Completely Satisfied" class="required" onchange="getVals(this, 'question_1');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+
+									<div class="form-group">
+										<label class="container_radio version_2">Есть балкон
+											<input type="checkbox" name="question_1" value="Extremely Satisfied" class="required" onchange="getVals(this, 'question_1');">
+											<span class="checkmark"></span>
+										</label>
+									</div>									
+								</div>
+
+
+
+
+
+
+								<!-- /step-->
+								<div class="step">
+									<h3 class="main_question"><strong>3/5</strong>Правила комнаты</h3>
+									<div class="form-group">
+										<label class="container_check version_2">Не курить
+											<input type="checkbox" name="question_2[]" value="Google Search Engine" class="required" onchange="getVals(this, 'question_2');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_check version_2">Не пить
+											<input type="checkbox" name="question_2[]" value="A friend of mine" class="required" onchange="getVals(this, 'question_2');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_check version_2">Домашние животные OK
+											<input type="checkbox" name="question_2[]" value="Print Advertise" class="required" onchange="getVals(this, 'question_2');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_check version_2">No sheker
+											<input type="checkbox" name="question_2[]" value="Newspaper" class="required" onchange="getVals(this, 'question_2');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">										
+										<input type="text" name="age" class="form-control" placeholder="Number of Occupants Allowed">
+										<span class="checkmark"></span>									
+									</div>
+									
+								</div>
+
+
+
+
+
+
+								<!-- /step-->
+								<div class="step">
+									<h3 class="main_question"><strong>4/5</strong>Предпочтительный возраст соседа по комнате</h3>
+									<div class="form-group">
+										<label class="container_radio version_2">>20
+											<input type="radio" name="question_3" value="No" class="required" onchange="getVals(this, 'question_3');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2"> "<"20
+											<input type="radio" name="question_3" value="Maybe" class="required" onchange="getVals(this, 'question_3');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2">30
+											<input type="radio" name="question_3" value="Probably" class="required" onchange="getVals(this, 'question_3');">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="container_radio version_2">>40
+											<input type="radio" name="question_3" value="100% Sure" class="required" onchange="getVals(this, 'question_3');">
+											<span class="checkmark"></span>
+										</label>
+									</div>									
+									<div class="form-group">
+										<label>Опишите своего идеального соседа по комнате</label>
+										<textarea name="additional_message" class="form-control" style="height:100px;" placeholder="Type here additional info..." onkeyup="getVals(this, 'additional_message');"></textarea>
+									</div>
+								</div>
+							
+
+							
+
+
+
+								<!-- /step-->
+								<div class="submit step">
+									<h3 class="main_question"><strong>5/5</strong>Опубликуйте свою комнату</h3>
+									<div class="summary">
+										<h1></h1>
+									</div>
+									
+								</div>
+								<!-- /step-->
+
+
+
+
+							</div>
+							<!-- /middle-wizard -->
+							<div id="bottom-wizard">
+								<button type="button" name="backward" class="backward">Назад</button>
+								<button type="button" name="forward" class="forward">Далее</button>
+								<button type="submit" name="process" class="submit">Отправить</button>
+							</div>
+							<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+			</div>
+			<!-- /content-right-->
+		</div>
+		<!-- /row-->
+	</div>
+	<!-- /container-fluid -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+	<!-- /cd-overlay-content -->
+
+	<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+	<!-- /menu button -->
+	
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	
+	<!-- COMMON SCRIPTS -->
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/common_scripts.min.js"></script>	
+	<script src="assets/js/functions.js"></script>
+
+	<!-- Wizard script -->
+	<script src="assets/js/survey_func.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Заявка риэлторам</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="realtors.css">
+
+  
+</head>
+<body>
+
+<form class="form contact-form">
+    <h2>Заявка риэлторам</h2>
+    <br>
+    <div>
+      <label class="form-label" for="name">Ваше имя</label>
+      <input class="form-control" id="name" name="name" type="text" required />
+    </div>
+
+
+    <div>
+      <label class="form-label" for="email">Электронная почта</label>
+      <input class="form-control" id="email" name="email" type="email" required />
+    </div>
+
+    <div>
+      <label class="form-label" for="name">Телефон</label>
+      <input class="form-control" id="name" name="name" type="text" required />
+    </div>
+          
+    
+    <div>
+      <label class="form-label" for="name">Кем являетесь</label> 
+      <select class="form-control" id="subject" name="subject" required>    
+        <option value="" selected disabled></option>           
+        <option value="subject-four">Частным лицом</option>
+        <option value="subject-five">Риэлтором</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="form-label" for="name">Хочу</label> 
+      <select class="form-control" id="subject" name="subject" required> 
+        <option value="" selected disabled></option>       
+        <option value="subject-four">Продать</option>
+        <option value="subject-five">Купить</option>
+        <option value="subject-six">Сдать</option>
+        <option value="subject-four">Снять</option>
+        <option value="subject-five">Обменять</option>
+        
+      </select>
+    </div>
+
+    <div>
+      <label class="form-label" for="name">Что</label> 
+      <select class="form-control" id="subject" name="subject" required> 
+        <option value="" selected disabled></option>       
+        <option value="subject-four">1-комнатную квартиру</option>
+        <option value="subject-five">2-комнатную квартиру</option>
+        <option value="subject-six">3-комнатную квартиру</option>
+        <option value="subject-four">4-комнатную квартиру</option>
+        <option value="subject-five">Многокомнатную квартиру</option>
+        <option value="subject-five">Комнату</option>
+        
+      </select>
+    </div>
+
+
+    <div>
+      <label class="form-label" for="message">Где находится?</label>
+      <textarea class="form-control" id="message" name="message" required></textarea>
+    </div>
+
+    
+    <div>
+      <label class="form-label" for="name">Примерная цена</label>
+      <input class="form-control" id="name" name="name" type="text" required />
+    </div>
+
+    <div>
+      <label class="form-label" for="name">Фотографии</label>
+      <input class="form-control" id="name" name="name" type="file" required />
+    </div>
+
+    <div>
+      <label class="form-label" for="message">Текст заявки</label>
+      <textarea class="form-control" rows="10" id="message" name="message" placeholder="Опишите свою недвижимость: укажите площадь, состояние (ремонт, чистовая отделка и так далее), характеристики, если таковые имеются. В общем указывайте всё, что поможет риэлторам сделать вам грамотное и взвешенное деловое предложение." required></textarea>
+    </div>
+
+
+    
+    <div>
+      <button class="button" type="submit">Отправить</button>
+      <button class="button" type="reset">Очистить</button>
+    </div>
+</form>
+
+
+</body>
+</html>

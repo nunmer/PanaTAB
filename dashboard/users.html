@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+  <link href="https://assets.codepen.io/344846/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="bg-gray-100 text-gray-600 h-screen flex overflow-hidden text-sm">
+	<div class="bg-white w-20 flex-shrink-0 border-r border-gray-200 flex-col hidden sm:flex">
+		<div class="h-16 text-blue-500 flex items-center justify-center">
+		<img src="shanyraq.png" width="40" href = "#">
+		</div>
+		<div class="flex mx-auto flex-grow mt-4 flex-col text-gray-400 space-y-4">
+
+			<button class="h-10 w-12 rounded-md flex items-center justify-center" onclick="window.location.href='profile.html'" >
+				<svg viewBox="0 0 24 24" class="h-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+				<polyline points="9 22 9 12 15 12 15 22"></polyline>
+				</svg>
+			</button>
+
+			<button class="h-10 w-12 rounded-md flex items-center justify-center bg-blue-100 text-blue-500">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-5   w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+				</svg>
+			</button>
+
+
+		</div>
+	</div>
+	<div class="flex-grow overflow-hidden h-full flex flex-col">
+    <div class="h-16 lg:flex w-full border-b border-gray-200 hidden px-10">
+
+      <!-- Subpages (Dashboard, Users) -->
+        <div class="flex h-full text-gray-600 ">
+          <a href="#" class="cursor-pointer h-full border-b-2 border-transparent inline-flex items-center mr-8">Dashboard</a>
+          <a href="#" class="cursor-pointer h-full border-b-2 border-blue-500 text-blue-500 inline-flex mr-8 items-center">Users</a>        
+        </div>
+  
+  
+        <!-- User logo -->
+        <div class="ml-auto flex items-center space-x-7">    
+          <button class="flex items-center">
+            <span class="relative flex-shrink-0">
+              <img class="w-7 h-7 rounded-full" src="shanyraq.png" alt="profile" />
+              <span class="absolute right-0 -mb-0.5 bottom-0 w-2 h-2 rounded-full bg-green-500 border border-white "></span>
+            </span>
+            <span class="ml-2">Almas Nurakhmetov</span>
+            <svg viewBox="0 0 24 24" class="w-4 ml-1 flex-shrink-0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+  
+  
+    </div>  
+	
+    <div class="flex-grow flex overflow-x-hidden">
+      <div class="xl:w-72 w-48 flex-shrink-0 border-r border-gray-200 h-full overflow-y-auto lg:block hidden p-5">
+        <div class="text-xs text-gray-400 tracking-wider">USERS</div>
+        <div class="relative mt-2">
+          <input type="text" class="pl-8 h-9 bg-transparent border border-gray-300 w-full rounded-md text-sm" placeholder="Search" />
+          <svg viewBox="0 0 24 24" class="w-4 absolute text-gray-400 top-1/2 transform translate-x-0.5 -translate-y-1/2 left-2" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <div class="space-y-4 mt-3">
+          
+          <button class="bg-white p-3 w-full flex flex-col rounded-md shadow">
+            <div class="flex xl:flex-row flex-col items-center font-medium text-gray-900 pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75 w-full">
+              <img src="shanyraq.png" class="w-7 h-7 mr-2 rounded-full" alt="profile" />
+              Bagdat Kuangali
+            </div>
+            <div class="flex items-center w-full">
+              <div class="text-xs py-1 px-2 leading-none bg-blue-100 text-blue-500 rounded-md">Realtor</div>
+              <div class="ml-auto text-xs text-gray-500">$1,902.00</div>
+            </div>
+          </button>
+
+
+          <button class="bg-white p-3 w-full flex flex-col rounded-md shadow-lg relative ring-2 ring-blue-500 focus:outline-none">
+            <div class="flex xl:flex-row flex-col items-center font-medium text-gray-900 pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75  w-full">
+              <img src="shanyraq.png" class="w-7 h-7 mr-2 rounded-full" alt="profile" />
+              Sanzhar Yermek 
+            </div>
+            <div class="flex items-center w-full">
+              <div class="text-xs py-1 px-2 leading-none bg-green-100 text-green-600 rounded-md">Have a room</div>
+              <div class="ml-auto text-xs text-gray-500">120.000 ₸</div>
+            </div>
+          </button>
+
+
+          <button class="bg-white p-3 w-full flex flex-col rounded-md shadow">
+            <div class="flex xl:flex-row flex-col items-center font-medium text-gray-900 pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75  w-full">
+             <img src="shanyraq.png" class="w-7 h-7 mr-2 rounded-full" alt="profile" />
+              Talgat Sovetbekov
+            </div>
+            <div class="flex items-center w-full">
+              <div class="text-xs py-1 px-2 leading-none bg-yellow-100 text-yellow-600 rounded-md">No room</div>
+              <div class="ml-auto text-xs text-gray-400">$9900.00</div>
+            </div>
+          </button>
+
+                
+
+          <button class="bg-white p-3 w-full flex flex-col rounded-md shadow">
+            <div class="flex xl:flex-row flex-col items-center font-medium text-gray-900 pb-2 mb-2 xl:border-b border-gray-200 border-opacity-75  w-full">
+              <img src="shanyraq.png" class="w-7 h-7 mr-2 rounded-full" alt="profile" />
+              Almas Nurakhmetov
+            </div>
+            <div class="flex items-center w-full">
+              <div class="text-xs py-1 px-2 leading-none bg-green-100 text-green-600 rounded-md">Have a room</div>
+              <div class="ml-auto text-xs text-gray-400">$0.00</div>
+            </div>
+          </button>
+
+
+        </div>
+      </div>
+      <div class="flex-grow bg-white overflow-y-auto">
+        <div class="sm:px-7 sm:pt-7 px-4 pt-4 flex flex-col w-full border-b border-gray-200 bg-white sticky top-0">
+          <div class="flex w-full items-center">
+            <div class="flex items-center text-3xl text-gray-900">
+              <img src="shanyraq.png" class="w-12 mr-4 rounded-full" alt="profile" />
+              Sanzhar Yermek
+            </div>
+            <div class="ml-auto sm:flex hidden items-center justify-end">
+              <div class="text-right">
+                <div class="text-xs text-gray-400 ">Budget</div>
+                <div class="text-gray-900 text-lg">120.000 ₸</div>
+              </div>
+              <button class="w-8 h-8 ml-4 text-gray-400 shadow  rounded-full flex items-center justify-center border border-gray-200 ">
+                <svg viewBox="0 0 24 24" class="w-4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="1"></circle>
+                  <circle cx="19" cy="12" r="1"></circle>
+                  <circle cx="5" cy="12" r="1"></circle>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 sm:mt-7 mt-4">
+            <a href="#" class="px-3 border-b-2 border-blue-500 text-blue-500  pb-1.5"></a>
+           
+          </div>
+        </div>
+
+        <div class="sm:p-7 p-4">
+         
+
+
+        
+                
+          
+
+
+          <table class="w-full text-left">
+            <thead>
+              <tr class="text-gray-400">
+                <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">Accommodation</th>
+                <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200">Where</th>
+                <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200  hidden md:table-cell">Description</th>
+                <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">Estimated money amount</th>                
+                <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 sm:text-gray-400 text-white">Move-in Date</th>
+
+                
+              </tr>
+            </thead>
+            
+            <tbody class="text-gray-600 ">
+              <tr>
+                <td class="sm:p-3 py-2 px-1 border-b border-gray-200 ">
+                  <div class="flex items-center">                    
+                    No
+                  </div>
+                </td>
+                <td class="sm:p-3 py-2 px-1 border-b border-gray-200 ">
+                  <div class="flex items-center">
+                    Nur-Sultan                      
+                  </div>
+                </td>
+                <td class="sm:p-3 py-2 px-1 border-b border-gray-200 md:table-cell hidden">2nd year student, seeking apartment along EXPO and roommates without bad habits</td>
+                <td class="sm:p-3 py-2 px-1 border-b border-gray-200 text-norm-500">120.000 ₸</td>
+                <td class="sm:p-3 py-2 px-1 border-b border-gray-200">
+                  <div class="flex items-center">
+                    <div class="sm:flex hidden flex-col">
+                      24.12.2020
+                      
+                    </div>
+                    
+                  </div>
+                </td>
+              </tr>              
+             
+
+
+
+
+            </tbody>
+          </table>
+
+
+          <br><br>
+
+          
+          <table class="w-full text-center">
+            <thead>
+              <tr class="text-gray-400">                
+                <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200">Roommate Preferences</th>            
+              </tr>
+            </thead>
+                    
+            <tbody class="text-gray-600 ">
+              <tr>              
+
+
+                <td class="sm:p-3 py-2 px-1 border-b border-gray-200 text-center">
+                  <div class="flex items-center">
+                          
+
+                    <table class="w-full text-left">
+                      <thead>
+                        <tr class="text-gray-400">
+                          <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">Cleaning</th>
+                          <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">Smoking, drinking</th>            
+                          <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">Pets</th>
+                          <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-200 ">Guests</th>            
+                        </tr>
+                      </thead>
+                              
+                      <tbody class="text-gray-600">
+                        <tr>
+                          <td class="sm:p-3 py-2 px-1 text-center">
+                            <div class="flex items-center">                    
+                              Once a week
+                            </div>
+                          </td>
+                          <td class="sm:p-3 py-2 px-1 text-center">
+                            <div class="flex items-center">
+                              No                   
+                            </div>
+                          </td>    
+                          <td class="sm:p-3 py-2 px-1 text-center">
+                            <div class="flex items-center">                    
+                              No
+                            </div>
+                          </td>
+                          <td class="sm:p-3 py-2 px-1 text-center">
+                            <div class="flex items-center">
+                              OK                      
+                            </div>
+                          </td>                            
+                                                                
+                        </tr>              
+                      </tbody>
+                     </table>
+
+
+
+
+
+
+
+
+                  </div>
+                </td>                              
+                                                      
+              </tr>              
+            </tbody>
+           </table>
+
+
+          <br><br>
+
+            
+  
+         
+
+
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
